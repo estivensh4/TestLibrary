@@ -1,0 +1,20 @@
+# Gradle
+.gradle/
+build/
+
+# Eclipse
+.settings/
+.classpath
+.metadata
+.loadpath
+.project
+
+# IntelliJ
+.idea/
+out/
+*.iml
+*.ipr
+*.iws
+
+# Travis CI populates gradle.properties with passwords; need to Git ignore it.
+gradle.properties
