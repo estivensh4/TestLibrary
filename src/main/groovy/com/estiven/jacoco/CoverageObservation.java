@@ -14,21 +14,15 @@
  * limitations under the License.
  */
 
-package com.palantir.jacoco;
+package com.estiven.jacoco;
 
-public enum CoverageRealm {
-    FILE("sourcefile", "fileThreshold"),
-    CLASS("class", "classThreshold"),
-    PACKAGE("package", "packageThreshold"),
-    REPORT("report", "reportThreshold");
+import java.util.EnumMap;
 
-    /** The name of the XML tag (in the Jacoco coverage XML report ) for this realm. */
-    public final String tagName;
-    /** The configuration DSL name for this realm. */
-    public final String realmName;
-
-    CoverageRealm(String tagName, String realmName) {
-        this.tagName = tagName;
-        this.realmName = realmName;
+/**
+ * The coverage observations (e.g., as extracted from the Jacoco XML report) for one scope.
+ */
+public final class CoverageObservation extends EnumMap<CoverageType, CoverageCounter> {
+    public CoverageObservation() {
+        super(CoverageType.class);
     }
 }
