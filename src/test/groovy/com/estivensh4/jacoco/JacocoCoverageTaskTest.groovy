@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.estiven.jacoco
+package com.estivensh4.jacoco
 
 import com.google.common.io.Resources
 import spock.lang.Specification

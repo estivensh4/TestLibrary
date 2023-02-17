@@ -14,13 +14,7 @@
  * limitations under the License.
  */
 
-package com.estiven.jacoco
-
-import nebula.test.IntegrationSpec
-
-import java.nio.file.Files
-import java.nio.file.Paths
-
+package com.estivensh4.jacoco
 /*
 class JacocoFullReportPluginTest extends IntegrationSpec {
 

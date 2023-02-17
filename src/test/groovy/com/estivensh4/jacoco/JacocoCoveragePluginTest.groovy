@@ -14,11 +14,7 @@
  * limitations under the License.
  */
 
-package com.estiven.jacoco
-
-import nebula.test.IntegrationSpec
-import nebula.test.functional.ExecutionResult
-
+package com.estivensh4.jacoco
 /*
 class JacocoCoveragePluginTest extends IntegrationSpec {
 

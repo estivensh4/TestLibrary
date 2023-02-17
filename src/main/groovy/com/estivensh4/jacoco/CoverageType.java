@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-package com.estiven.jacoco
+package com.estivensh4.jacoco;
 
-public class JacocoFullReportExtension {
-
-    public List<String> excludeProjects = new ArrayList<>()
-
-    /**
-     * Adds the given projects to the list of projects that should not be included in the coverage report.
-     */
-    def excludeProject(String... projects) {
-        excludeProjects.addAll(projects)
-    }
+/**
+ * An enumeration of the coverage types used in Jacoco's XML reports.
+ */
+public enum CoverageType {
+    BRANCH,
+    CLASS,
+    COMPLEXITY,
+    INSTRUCTION,
+    LINE,
+    METHOD
 }
